@@ -7,4 +7,5 @@ pipeline {
         powershell ('Write-Output "$env:TAG_NAME"')
       }
     }
+  }
 }
