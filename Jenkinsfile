@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage("Testing") {
       steps {
-        echo "Test tag stage"
+        powershell ('Write-Output "Test tag stage"')
+        powershell ('Write-Output "$env.TAG_NAME"')
       }
     }
 }
