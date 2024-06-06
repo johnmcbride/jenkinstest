@@ -4,7 +4,7 @@ pipeline {
     stage("Testing") {
       steps {
           script {
-            def imageName = "ehx:${env.BRANCH_NAME}"
+            def imageName = "ehx:${BRANCH_NAME}"
             echo imageName
             echo "This is the image name: ${imageName}"
           }
